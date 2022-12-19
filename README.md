@@ -10,6 +10,11 @@ However, the input file should be consistant with only contain one (!) query typ
 Here is a minimal example on how to use q2-bacdiving, please refer to the full [documentation](https://bacdiving.readthedocs.io/en/latest/) for more details:
 
 ```
+#Overview
+qiime bacdiving bacdive-call
+```
+
+```
 # File input (SILVA ids)
 qiime bacdiving bacdive-call --p-bacdive-id "<your-id>" --p-bacdive-password "<your-pw>" --p-input-via-file True --p-input-file-path "./SILVA_ids.txt" --p-sample-name "Sample1" --p-search-by-seq-accession True --p-print-res-df-to-file True --p-print-access-stats True --o-visualization "./final1.qzv"
 ```
@@ -19,4 +24,4 @@ qiime bacdiving bacdive-call --p-bacdive-id "<your-id>" --p-bacdive-password "<y
 qiime bacdiving bacdive-call --p-bacdive-id "<your-id>" --p-bacdive-password "<your-pw>" --p-taxtable-input True --p-taxtable-file-path "./lopresti_taxtab.tsv" --p-sample-name "lopresti" --p-print-res-df-to-file True --p-print-access-stats True --p-print-flattened-file True --o-visualization "./final2.qzv"
 ```
 
-Depending on how big your input files are, you may need to wait a little before your output files are saved.
+Depending on how big your input files are, you may need to wait a little before you can unzip your output.
